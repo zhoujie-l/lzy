@@ -1,23 +1,18 @@
 <template>
-  <a-layout>
-    <a-layout-header>
-      <app-header></app-header>
-    </a-layout-header>
-    <a-layout-content>
-      <app-main></app-main>
-    </a-layout-content>
-  </a-layout>
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <long-list id="longList"></long-list>
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader";
-import AppMain from "./components/AppMain";
+// import HelloWorld from "./components/HelloWorld.vue";
+import LongList from "./components/LongList";
 
 export default {
   name: "App",
   components: {
-    AppHeader,
-    AppMain,
+    // HelloWorld,
+    LongList,
   },
 };
 </script>
@@ -37,8 +32,5 @@ body {
   color: #2c3e50;
   /* margin-top: 60px; */
   height: 100%;
-}
-.ant-layout-header {
-  padding-top: 10px;
 }
 </style>
